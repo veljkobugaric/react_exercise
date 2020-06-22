@@ -1,0 +1,14 @@
+.Header__wrapper{
+    background-color:#181717;
+    color: white;
+    display: flex;
+    padding: 10px;
+    padding-left: 70px;
+
+}
+
+.Header__title{
+    margin: 0px;
+    font-family: 'Sriracha', cursive;
+    font-size: 25px;
+}
