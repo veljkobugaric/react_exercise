@@ -1,6 +1,7 @@
 import React from 'react';
 import { Data } from '../FetchData/Data';
 import CardView from '../CardView/CardView';
+import './Characters.css';
 
 class Characters extends React.Component {
     constructor(props) {
@@ -19,15 +20,29 @@ class Characters extends React.Component {
     }
 
     renderCharacters() {
-        return this.state.characters.map(character => {
-           return <CardView image={character.image} title={character.name} />
+        return this.state.characters.map((character, i) => {
+            return <CardView key={i} image={character.image} title={character.name} />
         })
     }
 
     render() {
         return (
-            < div>
-                {renderCharacters()}
+            <div>
+                <div className='Characters__pagination_wrapper' >
+                    <ul className='Characters__pagination'>
+                        <li><button id='firstChild'>&#60;</button></li>
+                        <li><button>1</button></li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li><button>4</button></li>
+                        <li><button>5</button></li>
+                        <li><button id='lastChild'>&#62;</button></li>
+
+                    </ul>
+                </div>
+                <div className="Characters__wrapper">
+                    {this.renderCharacters()}
+                </div>
             </div>
 
         );

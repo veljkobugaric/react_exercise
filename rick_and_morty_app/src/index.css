@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: monospace;
-  background-image: url('https://i1.wp.com/wallur.com/wp-content/uploads/2016/12/rick-morty-background-14.png?w=1920');
-  
+  background-image: url('https://cdn.shopify.com/s/files/1/0191/7850/products/RICKMORTY_V4_HC_-_COMP_FNL_WEB_1200x1200.jpg?v=1570640040'); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
