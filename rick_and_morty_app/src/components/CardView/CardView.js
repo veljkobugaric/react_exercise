@@ -1,10 +1,10 @@
 import React from 'react';
 
-const CardView = () => {
+const CardView = (props) => {
     return (
         <div className='CardView__wrapper'>
-            <img src='' alt='photo' />
-            <h4></h4>
+            <img src={props.image} alt='photo' />
+            <h4>{props.name}</h4>
         </div>
     )
 }

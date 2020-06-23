@@ -1,5 +1,6 @@
 import React from 'react';
 import { Data } from '../FetchData/Data';
+import CardView from '../CardView/CardView';
 
 class Characters extends React.Component {
     constructor(props) {
@@ -19,16 +20,14 @@ class Characters extends React.Component {
 
     renderCharacters() {
         return this.state.characters.map(character => {
-            <
+           return <CardView image={character.image} title={character.name} />
         })
     }
 
     render() {
         return (
             < div>
-
-
-
+                {renderCharacters()}
             </div>
 
         );
