@@ -1,38 +1,44 @@
 .CardView__wrapper {
-padding: 15px;
-border-radius: 4px;
+    padding: 15px;
+    border-radius: 4px;
+}
+.CardView__image {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
-.title-button{
-    background-color: #f3eaea75;
-    height: 90px;
+.title-button {
+    background-color:#f3eaea;
+    height: 100px;
     margin-top: -3px;
     border-radius: 4px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    
 }
 
-.title-button>h4{
+.title-button>h4 {
     margin: 0px;
     padding: 10px;
     font-size: 20px;
     font-family: 'Sriracha', cursive;
 }
-.title-button>button{
-width: 80%;
-height: 25px;
-border-radius: 4px;
-font-family: 'Sriracha', cursive;
-}
 
 .title-button>button:hover{
     background-color: rgb(13, 175, 86);
 }
-.CardView__image{
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+#button-like{
+    width: 80%;
+    border-radius: 4px;
+    font-family: 'Sriracha', cursive;
+    height: 35px;
+    margin: auto;
 }
-
-
+#button-like>svg{
+font-size: 18px;
+} 
+#button-like>span{
+    font-size: 18px;
+}
 
 

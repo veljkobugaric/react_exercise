@@ -29,6 +29,7 @@ margin-top: 40px;
 .Characters__pagination>li>button{
     height: 30px;
     border: none;
+    
 }
 .Characters__pagination>li>button:hover{
     background-color: lightgreen;
