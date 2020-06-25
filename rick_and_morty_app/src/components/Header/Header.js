@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.css';
+import style from './Header.module.css';
 
 
 const Header = () => {
     return (
-        <div className='Header__wrapper'>
-            <h1 className='Header__title'> Rick&Morty Wiki</h1>
+        <div className={style.wrapper}>
+            <h1 className={style.title}> Rick&Morty Wiki</h1>
         </div>
     )
 }

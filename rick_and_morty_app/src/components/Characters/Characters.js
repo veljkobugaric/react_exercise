@@ -1,7 +1,8 @@
 import React from 'react';
 import { CharactersService } from '../FetchData/Data';
 import CardView from '../CardView/CardView';
-import './Characters.css';
+import style from './Characters.module.css';
+
 
 
 
@@ -24,9 +25,7 @@ class Characters extends React.Component {
             .then(info => this.setState({ characters: info.results }))
     }
 
-    renderCharacters() {
-        return
-    }
+    
 
     onPageChange = (PageNumber) => {
         const chars = new CharactersService();
@@ -48,16 +47,16 @@ class Characters extends React.Component {
     render() {
         return (
             <div>
-                <div className='Characters__pagination_wrapper' >
-                    <ul className='Characters__pagination'>
-                        <li><button id='firstChild' onClick={this.prevPage}>&#60;</button></li>
+                <div className={style.pagination_wrapper}>
+                    <ul className={style.pagination}>
+                        <li><button id={style.firstChild} onClick={this.prevPage}>&#60;</button></li>
                         {this.state.pages.map((item, i) =>
                             <li key={i}><button onClick={(e) =>
                                 this.onPageChange(e.target.textContent)}>{item}</button></li>)}
-                        <li><button id='lastChild' onClick={this.nextPage}>&#62;</button></li>
+                        <li><button id={style.lastChild} onClick={this.nextPage}>&#62;</button></li>
                     </ul>
                 </div>
-                <div className="Characters__wrapper">
+                <div className={style.wrapper}>
                     {this.state.characters.map((character, i) => (
                         <CardView key={i} image={character.image} title={character.name} />
                     ))}

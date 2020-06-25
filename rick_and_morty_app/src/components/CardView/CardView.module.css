@@ -1,13 +1,13 @@
-.CardView__wrapper {
+.wrapper {
     padding: 15px;
     border-radius: 4px;
 }
-.CardView__image {
+.image {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
-.title-button {
+.title_button {
     background-color:#f3eaea;
     height: 100px;
     margin-top: -3px;
@@ -17,27 +17,27 @@
     
 }
 
-.title-button>h4 {
+.title_button>h4 {
     margin: 0px;
     padding: 10px;
     font-size: 20px;
     font-family: 'Sriracha', cursive;
 }
 
-.title-button>button:hover{
+.title_button>button:hover{
     background-color: rgb(13, 175, 86);
 }
-#button-like{
+#button_like{
     width: 80%;
     border-radius: 4px;
     font-family: 'Sriracha', cursive;
     height: 35px;
     margin: auto;
 }
-#button-like>svg{
+#button_like>svg{
 font-size: 18px;
 } 
-#button-like>span{
+#button_like>span{
     font-size: 18px;
 }
 
