@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { CharactersService } from '../FetchData/Data';
 import style from './InfoCard.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Button from 'react-bootstrap/Button';
 
 export class InfoCard extends React.Component {
@@ -28,7 +28,7 @@ export class InfoCard extends React.Component {
 
         return (
             <div className={style.infoCard}>
-                <Link to="/"><Button variant="outline-dark">Back</Button></Link>
+                <Link to="/"><Button variant="light">Back</Button></Link>
                 <img className={style.image} src={this.state.character.image} alt='' />
                 <div className={style.character_information}>
                     <h1 className={style.name}>Name:{this.state.character.name}</h1>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import Characters from './components/Characters/Characters';
 import { InfoCard } from './components/InfoCard/InfoCard';
