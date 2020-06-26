@@ -1,0 +1,26 @@
+.infoCard{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('https://wallpapercave.com/wp/wp1822727.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.image{
+    position: absolute;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: -740px;
+}
+.infoCard{
+    position: relative;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.character_information{
+    margin-top: 38px;
+    font-size: 1.7em;
+    color: white;
+    z-index: 1;
+    text-align: left;
+    margin-left: 750px;
+    
+}

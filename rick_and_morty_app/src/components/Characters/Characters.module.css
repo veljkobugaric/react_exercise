@@ -1,10 +1,16 @@
+.characters_wrapper{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('https://cdn.shopify.com/s/files/1/0191/7850/products/RICKMORTY_V4_HC_-_COMP_FNL_WEB_1200x1200.jpg?v=1570640040');
+    background-size: cover;
+    padding-bottom: 100px;
+}
 .pagination_wrapper{
 display: flex;
-margin-top: 40px;
+margin-top: 0px;
 }
 .pagination{
     display: flex;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .pagination>li{

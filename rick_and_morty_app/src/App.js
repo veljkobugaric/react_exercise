@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Characters from './components/Characters/Characters';
-
+import { InfoCard } from './components/InfoCard/InfoCard';
+import { Switch, Route } from 'react-router';
+import { Footer } from './components/Footer/Footer';
 
 class App extends React.Component {
 
@@ -10,7 +12,12 @@ class App extends React.Component {
     return (
       <div className="App" >
         <Header />
-        <Characters />
+        <Switch>
+          <Route exact path='/' component={Characters} />
+          <Route exact path='/characters/:id' component={InfoCard} />
+        </Switch>
+        <Footer />
+
       </div>
     );
   }

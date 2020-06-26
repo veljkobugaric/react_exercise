@@ -2,8 +2,7 @@ import React from 'react';
 import { CharactersService } from '../FetchData/Data';
 import CardView from '../CardView/CardView';
 import style from './Characters.module.css';
-
-
+import { Link } from 'react-router-dom';
 
 
 class Characters extends React.Component {
@@ -25,8 +24,6 @@ class Characters extends React.Component {
             .then(info => this.setState({ characters: info.results }))
     }
 
-    
-
     onPageChange = (PageNumber) => {
         const chars = new CharactersService();
         chars.getPage(PageNumber)
@@ -46,7 +43,7 @@ class Characters extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className={style.characters_wrapper}>
                 <div className={style.pagination_wrapper}>
                     <ul className={style.pagination}>
                         <li><button id={style.firstChild} onClick={this.prevPage}>&#60;</button></li>
@@ -58,7 +55,7 @@ class Characters extends React.Component {
                 </div>
                 <div className={style.wrapper}>
                     {this.state.characters.map((character, i) => (
-                        <CardView key={i} image={character.image} title={character.name} />
+                        <Link to={`/characters/${character.id}`} key={i}><CardView key={i} image={character.image} title={character.name} /></Link>
                     ))}
                 </div>
             </div>

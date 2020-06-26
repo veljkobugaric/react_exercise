@@ -8,6 +8,11 @@ export class CharactersService {
         return fetch(`https://rickandmortyapi.com/api/character/?page=${pageNum}`)
             .then(response => response.json())
     }
+
+    getCharacter(id) {
+        return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+            .then(response => response.json())
+    }
 }
 
 //  komentari su dole
